@@ -8,7 +8,7 @@ I also design and operate my own infrastructure: two **Ubuntu Server** machines,
 
 ## Homelab — compute vs serve
 
-A rural internet outage must not take everything down, so the clusters are **not** federated. They talk over Tailscale.
+The clusters are **not** federated: if one machine is down, the other keeps serving. They talk over Tailscale.
 
 | | **Mini PC** (compute) | **NAS** (serve) |
 |---|---|---|
@@ -16,15 +16,15 @@ A rural internet outage must not take everything down, so the clusters are **not
 | Role | Inference, CI runners, observability | Public edge: Traefik, git, cloud, ML demos |
 | Orchestration | k3s (single-node) | k3s (single-node) |
 
-The 780M is a modest iGPU. I mainly run **MoE** models (Qwen3-30B-A3B) that stay snappy because they sit in **unified memory** (GTT), not dedicated VRAM — a deliberate architecture choice, not a discrete GPU workstation.
+The 780M is a modest iGPU **with no dedicated VRAM**. A discrete GPU in the same form factor (mini PC / laptop) typically tops out at 8–16 GB of VRAM; here model weights sit in **unified memory** (GTT, tens of GiB). That is what makes it possible to host and serve an MoE such as Qwen3-30B-A3B, which would not fit in the VRAM of an equivalent dGPU.
 
 **Try it** (temporary chat, nothing persisted): [Qwen3-30B MoE via Open WebUI](https://llm.gregoiremureau.com/auto-login.html?temporary-chat=true&model=qwen3:30b-a3b-q6k)
 
-Also live from the NAS: [ML APIs](https://api.gregoiremureau.com/ml/) · [MLflow](https://mlflow.gregoiremureau.com) · this Forgejo instance at [git.gregoiremureau.com](https://git.gregoiremureau.com).
+Also live from the NAS: [ML APIs](https://api.gregoiremureau.com/ml/) · this Forgejo instance at [git.gregoiremureau.com](https://git.gregoiremureau.com).
 
 ## Case study — sovereign community platform
 
-A community founded in 2007 (19 years, approaching 20), hosted first on one proprietary platform then a second, migrated to a fully self-hosted open-source Discourse: **[depiedencap.org](https://depiedencap.org/)**.
+A community founded in 2007 (19 years, approaching 20), hosted first on one proprietary platform then a second, migrated to open-source **Discourse on a dedicated VPS I operate** (not on the NAS): **[depiedencap.org](https://depiedencap.org/)**.
 
 - 22,230 topics · 424,835 posts · 7,102 accounts mapped · 93,884 images (8.8 GB)
 - Custom Discourse plugins (onboarding, French locale/PWA, RAG citations)
