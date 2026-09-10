@@ -1,6 +1,6 @@
 # Grégoire Mureau
 
-📘 This profile is also available in [French 🇫🇷](https://github.com/GrgMdmn/GrgMdmn/blob/main/README.fr.md)
+📘 Ce profil est également disponible en [français 🇫🇷](https://github.com/GrgMdmn/GrgMdmn/blob/main/README.fr.md)
 
 **ML / data engineer — RAG · LLM serving · homelab Kubernetes**
 
