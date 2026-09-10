@@ -1,5 +1,7 @@
 # Grégoire Mureau
 
+📘 This profile is also available in [French 🇫🇷](https://github.com/GrgMdmn/GrgMdmn/blob/main/README.fr.md)
+
 **ML / data engineer — RAG · LLM serving · homelab Kubernetes**
 
 Graduate **AI Engineer (Data Science Expert)**. Eighteen months in production data engineering at [Ifremer](https://www.ifremer.fr/) (Copernicus Marine, millions of in-situ observations per day; [3 scientific publications](https://www.researchgate.net/profile/Gregoire_Mureau)).
@@ -20,7 +22,7 @@ The 780M is a modest iGPU **with no dedicated VRAM**. A discrete GPU in the same
 
 **Try it** (temporary chat, nothing persisted): [Qwen3-30B MoE via Open WebUI](https://llm.gregoiremureau.com/auto-login.html?temporary-chat=true&model=qwen3:30b-a3b-q6k)
 
-Also live from the NAS: [ML APIs](https://api.gregoiremureau.com/ml/) · this Forgejo instance at [git.gregoiremureau.com](https://git.gregoiremureau.com).
+Also live from the NAS: [ML APIs](https://api.gregoiremureau.com/ml/) · Forgejo at [git.gregoiremureau.com](https://git.gregoiremureau.com).
 
 ## Case study — sovereign community platform
 
@@ -51,7 +53,7 @@ One repository per project (split from the old monorepo). Same names on Forgejo 
 | 11 | Big data fruits (PySpark) | [oc-p11-bigdata-fruits](https://github.com/GrgMdmn/oc-p11-bigdata-fruits) | — |
 | 12 | Fashion-Insta project framing | [oc-p12-fashion-insta](https://github.com/GrgMdmn/oc-p12-fashion-insta) | — |
 
-ML demos: [api.gregoiremureau.com/ml/](https://api.gregoiremureau.com/ml/) · former monorepo [`OpenClassrooms_AI_Projects`](https://github.com/GrgMdmn/OpenClassrooms_AI_Projects) is an archive.
+ML demos: [api.gregoiremureau.com/ml/](https://api.gregoiremureau.com/ml/) · the former monorepo is an archive (private).
 
 ## Links
 
