@@ -24,7 +24,7 @@ Also live from the NAS: [ML APIs](https://api.gregoiremureau.com/ml/) · [MLflow
 
 ## Case study — sovereign community platform
 
-A ~15-year community, hosted first on one proprietary platform then a second, migrated to a fully self-hosted open-source Discourse: **[depiedencap.org](https://depiedencap.org/)**.
+A community founded in 2007 (19 years, approaching 20), hosted first on one proprietary platform then a second, migrated to a fully self-hosted open-source Discourse: **[depiedencap.org](https://depiedencap.org/)**.
 
 - 22,230 topics · 424,835 posts · 7,102 accounts mapped · 93,884 images (8.8 GB)
 - Custom Discourse plugins (onboarding, French locale/PWA, RAG citations)
